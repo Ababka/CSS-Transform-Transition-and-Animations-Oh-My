@@ -7,7 +7,7 @@
 
 .hamburger:hover > div:nth-child(2){
   animation-name: middle;
-  animation-duration: .1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -27,17 +27,23 @@ nav {
   opacity: 1;
 }
 
+/* cant center top and bottom to make perfect X */
+
 @keyframes top {
-  from {}
-  to {}
+  0% { transform: rotate(0); margin-top: 0%;}
+  /* 50%  { margin-top: 22%;} */
+  100%   { transform: rotate(45deg); margin-top: 50%; min-width: 70px; min-height: 10px;}
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  0%   { opacity: 1;}
+  /* 50%  { opacity: 0.5;} */
+  100% { opacity: 0;}
+  
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  0% { transform: rotate(0); margin-bottom: 0%;}
+  /* 50%  { margin-bottom: 22%;} */
+  100%   { transform: rotate(-45deg); margin-bottom: 50%; min-width: 70px; min-height: 10px;}
 }

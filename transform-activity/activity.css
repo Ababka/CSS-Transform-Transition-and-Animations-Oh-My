@@ -1,3 +1,9 @@
 main {
+    transform: skew( 179deg, -8deg);
+    width: 1245px;
+    text-align: justify;
+}
 
+.info{
+    width: 256px;
 }
